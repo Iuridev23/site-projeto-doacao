@@ -1,0 +1,258 @@
+/* Reset para margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral das páginas */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #6b99d1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Banner e nav */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner h1{
+    margin: 20px;
+    font-size: 48px;
+}
+
+.banner img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 40px;
+    margin: 0 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(14, 25, 140);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+nav ul li:hover {
+    background-color: rgb(94, 101, 182);    
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+main h2{
+    font-size: 32px;
+    margin: 10px;
+}
+
+main h3{
+    margin: 10px;
+}
+
+main img{
+    width: 200px;
+    margin: 10px;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+/* Botões da página inicial */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.donate-button, .request-button {
+    width: 250px;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.request-button {
+    background-color: #2196F3;
+}
+
+/* Cards das páginas de Pedidos e Doações */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo da página de contato */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.contact-form, .social-links {
+    margin: 10px 0;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-links a {
+    display: block;
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 50px;
+}
+
+/* Estilo do footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #6b99d1;
+    color: #fff;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 430px) {
+    .banner img {
+        width: 70px;
+    }
+
+    .social-media img {
+        width: 30px;
+        margin: 0 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}
